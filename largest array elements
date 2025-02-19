@@ -1,4 +1,4 @@
-include <stdio.h>
+#include <stdio.h>
 void main ()
 {
     int n = 0, i = 0, largest1 = 0, largest2 = 0, temp = 0;
