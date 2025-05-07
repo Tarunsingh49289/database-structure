@@ -1,5 +1,4 @@
-// A simple C program for
-// traversal of a linked list
+
  
 #include <stdio.h>
 #include <stdlib.h>
@@ -10,8 +9,7 @@ struct Node {
     
 };
 struct Node* head = NULL;
-// This function prints contents of linked list starting
-// from the given node
+
 void printList(struct Node* n)
 {
     while (n != NULL) {
@@ -90,14 +88,14 @@ temp->next = temp->next->next;
 }*/
 
  
-// Driver's code
+
 int main()
 {
     int pos = 2;
     struct Node* second = NULL;
     struct Node* third = NULL;
  
-    // allocate 3 nodes in the heap
+    
     head = (struct Node*)malloc(sizeof(struct Node));
     second = (struct Node*)malloc(sizeof(struct Node));
     third = (struct Node*)malloc(sizeof(struct Node));
@@ -111,14 +109,7 @@ int main()
     third->data = 3; // assign data to third node
     third->next = NULL;
  
-    // Function call
     
-
-    //deletefirst();
-    //deletelast();
-//deletemiddle(pos);
-  //insertbeg();
-  //insertend();
   insertmid(3);
   printList(head);
     return 0;
